@@ -4,5 +4,8 @@ namespace App;
 
 class Exemplo
 {
-    //todo
+    public function __construct(
+        protected Produto $produto
+    ) {
+    }
 }

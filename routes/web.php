@@ -1,13 +1,14 @@
 <?php
 
+use App\Exemplo;
 use Illuminate\Support\Facades\Route;
 
-app()->bind('Exemplo', function() {
-    return new \App\Exemplo;
-});
+// app()->bind(Exemplo::class, function() {
+//     return new \App\Exemplo;
+// });
 
 Route::get('/', function () {
-    $instanciaExemplo = app()->make('Exemplo');
+    $instanciaExemplo = app()->make(Exemplo::class);
 
     dd($instanciaExemplo);
     
