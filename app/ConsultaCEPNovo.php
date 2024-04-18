@@ -2,7 +2,7 @@
 
 namespace App;
 
-class ConsultaCEP implements ConsultaCEPInterface
+class ConsultaCEPNovo implements ConsultaCEPInterface
 {
     public function __construct(
         private string $apikey
@@ -15,6 +15,6 @@ class ConsultaCEP implements ConsultaCEPInterface
 
         //fazer a requisição
 
-        echo "meu endereço";
+        echo "meu endereço novo";
     }
 }
