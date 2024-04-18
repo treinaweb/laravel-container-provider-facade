@@ -15,6 +15,6 @@ class ConsultaCEP
 
         //fazer a requisição
 
-        echo "meu endereço";    
+        echo "meu endereço";
     }
 }

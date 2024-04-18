@@ -10,6 +10,6 @@ class HomeController extends Controller
 {
     public function index(ConsultaCEP $consultaCEP)
     {
-        dd($consultaCEP->consulta('12345678'));
+        $consultaCEP->consulta('12345678');
     }
 }
