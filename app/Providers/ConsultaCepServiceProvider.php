@@ -12,7 +12,7 @@ class ConsultaCepServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        $this->app->bind(ConsultaCEP::class, function() {
+        $this->app->singleton(ConsultaCEP::class, function() {
             return new ConsultaCEP(
                 config('services.cep.apikey')
             );
